@@ -1,11 +1,17 @@
 package org.superbiz.moviefun;
 
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.client.RestTemplate;
+
+import javax.swing.*;
 
 import static org.hamcrest.CoreMatchers.containsString;
 import static org.hamcrest.MatcherAssert.assertThat;
 
+/*@RunWith(SpringRunner.class)
+@SpringBootApplication()*/
 public class SmokeTest {
 
     @Test
