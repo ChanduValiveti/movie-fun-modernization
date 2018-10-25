@@ -22,13 +22,9 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import java.io.Serializable;
 
-@Entity
-public class Movie implements Serializable {
 
-    private static final long serialVersionUID = 1L;
+public class MovieInfo implements Serializable {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
     private String director;
@@ -37,10 +33,10 @@ public class Movie implements Serializable {
     private String genre;
     private int rating;
 
-    public Movie() {
+    public MovieInfo() {
     }
 
-    public Movie(String title, String director, String genre, int rating, int year) {
+    public MovieInfo(String title, String director, String genre, int rating, int year) {
         this.director = director;
         this.title = title;
         this.year = year;
@@ -48,7 +44,7 @@ public class Movie implements Serializable {
         this.rating = rating;
     }
 
-    public Movie(String director, String title, int year) {
+    public MovieInfo(String director, String title, int year) {
         this.director = director;
         this.title = title;
         this.year = year;
